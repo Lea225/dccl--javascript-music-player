@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>devchallenges | Music Player</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="player">
+            <img id="cover" src="images/cover-1.png" alt="Album Cover">
+            <div class="info">
+                <h3 id="title">Lost in the City Lights</h3>
+                <p id="artist">Cosmo Sheldrake</p>
+            </div>
+            <div class="controls">
+                <div class="time">
+                    <span id="current-time">00:00</span>
+                    <span id="duration">00:00</span>
+                </div>
+                <input id="progress" type="range" value="0">
+                <div class="control-button">
+                    <button id="prev"><img src="images/Stop_and_play_fill-1.svg" alt="Stop_and_play_fill-1"></button>
+                    <button class="play-pause" id="play-pause"><img src="images/Play_fill.svg" alt="Play Icon" id="play-pause-icon"></button>
+                    <button id="next"><img src="images/Stop_and_play_fill_reverse.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    
+        <audio id="audio" src="audio/forest-lullaby-110624.mp3"></audio>
+    </section>
+</body>
+</html>
